@@ -3,11 +3,11 @@ Add package description
 
 ### Installation
 ```bash
-pip install replay_identification
+pip install package_name
 ```
 Or
 ```bash
-conda install -c edeno replay_identification
+conda install -c edeno package_name
 ```
 Or
 ```bash
@@ -24,6 +24,6 @@ python setup.py install
 ```bash
 cd <package folder>
 conda env create -f environment.yml
-conda activate replay_identification
+conda activate package_name
 python setup.py develop
 ```
