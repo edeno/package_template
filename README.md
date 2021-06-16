@@ -25,5 +25,5 @@ python setup.py install
 cd <package folder>
 conda env create -f environment.yml
 conda activate package_name
-python setup.py develop
+pip install --editable .
 ```
