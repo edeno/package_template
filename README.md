@@ -12,7 +12,7 @@ conda install -c edeno package_name
 Or
 ```bash
 git clone <package.git>
-python setup.py install
+pip install .
 ```
 
 ### Usage
@@ -25,5 +25,5 @@ python setup.py install
 cd <package folder>
 conda env create -f environment.yml
 conda activate package_name
-pip install --editable .
+pip install --editable . --no-deps
 ```
