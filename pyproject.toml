@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "repository_name"
+name = "package_name"
 description = ""
 readme = "README.md"
 requires-python = ">=3.8"
@@ -26,8 +26,8 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-"Homepage" = "https://github.com/edeno/repository_name"
-"Bug Tracker" = "https://github.com/edeno/repository_name/issues"
+"Homepage" = "https://github.com/edeno/package_name"
+"Bug Tracker" = "https://github.com/edeno/package_name/issues"
 
 [project.optional-dependencies]
 test = ["black", "pytest", "pytest-cov"]
@@ -36,10 +36,10 @@ test = ["black", "pytest", "pytest-cov"]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/repository_name/_version.py"
+version-file = "src/package_name/_version.py"
 
 [tool.hatch.build.targets.sdist]
 exclude = [".git_archival.txt"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/repository_name"]
+packages = ["src/package_name"]
